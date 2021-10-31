@@ -1,0 +1,39 @@
+.btn {
+  display: block;
+  background-color: skyblue;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.title {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.rating {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.textInfo {
+  width: 850px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.active {
+  color: orangered;
+}

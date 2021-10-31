@@ -1,0 +1,20 @@
+.notification {
+  color: orangered;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 120px;
+  margin-left: 250px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 1000px;
+  background-color: rgba(179, 247, 179, 0.5);
+}
+.user {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 30px;
+}
