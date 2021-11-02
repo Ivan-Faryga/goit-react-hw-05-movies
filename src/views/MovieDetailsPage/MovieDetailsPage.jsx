@@ -37,7 +37,7 @@ const MovieDetailsPage = () => {
   }
 
   const handleBack = () => {
-    history.push(location?.state?.from);
+    history.push(location?.state?.from ?? "/");
   };
 
   return (
@@ -57,7 +57,10 @@ const MovieDetailsPage = () => {
           <li className={s.link}>
             <NavLink
               exact
-              to={`${url}/${movieId}/cast`}
+              to={{
+                pathname: `${url}/${movieId}/cast`,
+                state: { from: location.state.from },
+              }}
               className={s.link}
               activeClassName={s.active}
             >
@@ -67,7 +70,10 @@ const MovieDetailsPage = () => {
           <li className={s.link}>
             <NavLink
               exact
-              to={`${url}/${movieId}/reviews`}
+              to={{
+                pathname: `${url}/${movieId}/reviews`,
+                state: { from: location.state.from },
+              }}
               className={s.link}
               activeClassName={s.active}
             >
